@@ -1,0 +1,190 @@
+/* Base styles */
+body {
+  max-width: 1280px;
+  margin: 0 auto; /* Center the content */
+}
+
+.text-purple {
+  color: rgb(78, 27, 180);
+}
+
+.text-tomato {
+  color: rgb(233, 163, 150);
+}
+
+/* Buttons */
+.getStatrted {
+  background-color: rgb(78, 27, 180);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 6px 12px;
+}
+
+.contactUs {
+  background-color: white;
+  border: 1px solid rgb(78, 27, 180); /* Border with the same color as text */
+  border-radius: 5px;
+  color: rgb(78, 27, 180);
+  padding: 4px 10px;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero div:first-child {
+  flex: 1;
+}
+
+.hero div:last-child {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+}
+
+.features {
+  margin-top: 120px;
+}
+
+.features-text {
+  display: flex;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.features-text div:first-child {
+  flex: 1;
+}
+
+.features-text div:last-child {
+  flex: 2;
+}
+
+/* Product cards */
+.card {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Testimonials */
+.testimonial-image {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px; /* Add space between the image and the text */
+}
+
+.carousel-caption {
+  position: static; /* Make sure caption is not overlapping image */
+  bottom: auto; /* Reset bottom position if necessary */
+  padding: 0; /* Remove default padding if needed */
+}
+
+.textWidth {
+  width: 100%;
+  max-width: 760px;
+}
+
+.carousel-indicators {
+  margin-top: 70px;
+}
+.text-green {
+    color: green;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.text-grey {
+    color: grey;
+}
+
+.small {
+    font-size: 0.875em; /* Adjust the size as needed */
+}
+
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero div:last-child {
+    margin-top: 20px;
+  }
+
+  .features-text {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .carousel-caption p,
+  .carousel-caption h5 {
+    font-size: 14px;
+  }
+
+  .testimonial-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .textWidth {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .features {
+    margin-top: 60px;
+  }
+
+  .features-text {
+    margin-top: 30px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+    margin: auto;
+  }
+
+  .d-flex {
+    flex-direction: column;
+    align-items: center; /* Center align the flex items */
+    text-align: center; /* Center text content */
+  }
+
+  .features-text img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .hero img {
+    max-width: 100%;
+  }
+
+  .contactUs {
+    margin-top: 10px;
+  }
+
+  /* Contact Us section */
+  .contactUs img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .form-floating {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
